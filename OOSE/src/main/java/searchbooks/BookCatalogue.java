@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package group1.oose.searchbooks;
+package searchbooks;
 
 import java.util.List;
 

@@ -1,5 +1,5 @@
 
-package group1.oose.searchbooks;
+package searchbooks;
 
 /**
  *
