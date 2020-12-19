@@ -1,5 +1,6 @@
 package searchbooks;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -48,7 +49,7 @@ public class SearchController {
             case "ISBN":
                 return catalogue.findByISBN(query);
             default:
-                return null;
+                return new ArrayList<>();
         }
     }
 }
