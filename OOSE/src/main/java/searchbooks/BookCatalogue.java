@@ -9,33 +9,56 @@ import java.util.List;
 
 /**
  *
- * @author achil
+ * @author Group1
  */
 public class BookCatalogue {
-    
-    Object connection;
 
-    public void dataSourceConnection(String url){
-        
+    //database connection instance varibale
+    private Object connection;
+
+    /**
+     * Connect to the database represented by the URL parameter
+     *
+     * @param url
+     */
+    public void dataSourceConnection(String url) {
+        //logic to connect to the database supplied by url
+        this.connection = url;
     }
-    
-   
-    public List<Book> findByTitle(String query){
-       List<Book> books = null;
-       //logic code 
-       return books;
-    }
-    
-    public List<Book> findByISBN(String query){
+
+    /**
+     * returns a list of books or null if no book is found
+     *
+     * @param query
+     * @return List
+     */
+    public List<Book> findByTitle(String query) {
         List<Book> books = null;
-       //logic code 
-       return books;
+        //logic code here
+        return books;
     }
-    
-    public List<Book> findByGenre(String query){
+
+    /**
+     * returns a list with one book or null if no book is found
+     *
+     * @param query
+     * @return List
+     */
+    public List<Book> findByISBN(String query) {
         List<Book> books = null;
-       //logic code 
-       return books;
+        //logic code here
+        return books;
+    }
+
+    /**
+     * returns a list of books or null if no book is found
+     * @param query
+     * @return List
+     */
+    public List<Book> findByGenre(String query) {
+        List<Book> books = null;
+        //logic code here
+        return books;
     }
 
 }
